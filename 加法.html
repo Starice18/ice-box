@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>加法软件</title>
+<script>
+function 计算加法() {
+    // 获取用户输入的数字
+    var 数字1 = parseFloat(document.getElementById("数字1").value);
+    var 数字2 = parseFloat(document.getElementById("数字2").value);
+    
+    // 计算两个数字的和
+    var 和 = 数字1 + 数字2;
+    
+    // 显示结果
+    document.getElementById("结果").value = 和;
+}
+</script>
+</head>
+<body>
+ 
+<h1>加法软件</h1>
+<p>请输入两个数字并计算它们的和：</p>
+
+<input type="text" id="数字1" placeholder="请输入第一个数字">
+<input type="text" id="数字2" placeholder="请输入第二个数字">
+<button onclick="计算加法()">计算和</button>
+
+<p>结果：</p>
+<input type="text" id="结果" readonly>
+
+</body>
+</html>
